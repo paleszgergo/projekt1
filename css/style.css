@@ -1,0 +1,20 @@
+h1 {
+    font-family: 'Raleway', sans-serif;
+    color: red;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+}
+
+th {
+    color: limegreen;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: large;
+    font-style: italic;
+}
+
+tr {
+    font-family: 'Raleway', sans-serif;
+}
