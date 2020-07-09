@@ -1,10 +1,38 @@
+
+
+body {
+    background-color: yellow;
+}
+
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    height: auto;
+    width: 1000px;
+}
+
+main {
+    background: white;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+
 h1 {
     font-family: 'Raleway', sans-serif;
     color: red;
 }
 
 h2 {
-    font-family: 'Raleway', sans-serif;
+        font-family: 'Raleway', sans-serif;
 }
 
 th {
@@ -17,4 +45,21 @@ th {
 
 tr {
     font-family: 'Raleway', sans-serif;
+}
+
+button {
+    background-color: red;
+    border-radius: 15px 50px 30px;
+    width: auto;
+    height: auto;
+}
+
+a {
+    font-size: x-large;
+    color: yellow;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: yellow;
 }
