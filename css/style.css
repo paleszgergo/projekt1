@@ -46,20 +46,3 @@ th {
 tr {
     font-family: 'Raleway', sans-serif;
 }
-
-button {
-    background-color: red;
-    border-radius: 15px 50px 30px;
-    width: auto;
-    height: auto;
-}
-
-a {
-    font-size: x-large;
-    color: yellow;
-    text-decoration: none;
-}
-
-button:hover {
-    background-color: yellow;
-}
