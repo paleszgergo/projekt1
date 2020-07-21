@@ -10,16 +10,75 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container-fluid text-center">
-        <div class="row">
-            <div class="col-xl bg-warning"></div>
-        
-            <div class="col-xl-6">
 
-                    <a class="btn btn-danger btn-xl text-warning" href="./sale.html" role="button">Akció</a>
-                    <a class="btn btn-danger btn-xl text-warning" href="./menu.html" role="button">Étlap</a>
-                    <a class="btn btn-danger btn-xl text-warning" href="./order.html" role="button">Rendelés</a>
-                    <a class="btn btn-danger btn-xl text-warning" href="./contact.html" role="button">Elérhetőségünk</a>
+
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-sm bg-warning"></div>
+    
+        <div class="col-sm-6">
+          <div class="weather bg-danger rounded">
+
+            <div class="row">
+              <div class="col text-warning pt-3 px-4">
+                <strong>Időjárás</strong>
+
+              </div>
+              <div class="col">
+                <p class="pt-3 pr-2 text-warning text-right" id="temperature"><strong>--- °C</strong></p>
+                
+              </div>
+              <div class="w-100"></div>
+                <div class="col  pl-sm-4">
+                  <form class="form-inline ml-0 mb-2 ">
+                  <select class="form-control">
+                    <option id="day" value="0">Hétfő</option>
+                    <option id="day" value="1">Kedd</option>
+                    <option id="day" value="2">Szerda</option>
+                    <option id="day" value="3">Csütörtök</option>
+                    <option id="day" value="4">Péntek</option>
+                    <option id="day" value="5">Szombat</option>
+                    <option id="day" value="6">Vasárnap</option>
+                  </select>
+                  <button class="btn btn-warning ml-2 mb-0 text-danger" type="button" onclick="weatherWidget()">Mutasd</button>
+                  </form>
+
+                </div>
+                <div class="col text-right" id="offer">
+
+                </div>
+
+            </div>
+              <div id="weather ml-sm-0">
+              </div>
+              
+
+          </div>
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="./sale.html">
+              <img src="./img/burgericon.png" width="50" height="50" alt="" loading="lazy">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active pr-lg-3">
+                  <a class="nav-link btn btn-danger text-warning" href="./sale.html">Akció <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active pr-lg-3">
+                  <a class="nav-link btn btn-danger text-warning" href="./menu.html">Étlap <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active pr-lg-3">
+                  <a class="nav-link btn btn-danger text-warning" href="./order.html">Rendelés <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active pr-lg-3">
+                  <a class="nav-link btn btn-danger text-warning" href="./contact.html">Elérhetőségünk <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
 
 
     <h1>
@@ -33,7 +92,7 @@
     <p>
         Amennyiben a hamburger mellé sült krumplit is rendelsz, kérd menüben és 10% kedvezményt biztosítunk!
     </p>
-    <img src="./img/burgerMenu.png" alt="">
+    <img class="rounded mx-auto d-block" src="./img/burgerMenu.png" alt="">
     <h2>
         Gyermeknapi akció
     </h2>
@@ -41,7 +100,7 @@
     <p>
         Érdemes gyermeknapon nálunk enni, mert a hamburger mellé ajándékot és adunk a 14 év alatti gyermekeknek.
     </p>
-    <img src="./img/kidBurger.png" alt="">
+    <img class="rounded mx-auto d-block" src="./img/kidBurger.png" alt="">
     <h2>
         Heti akció
     </h2>
@@ -49,7 +108,7 @@
     <p>
         Szereted a csípőset? A chili burger csak 1290Ft a héten!
     </p>
-    <img src="./img/bbqBurger.png" alt="">
+    <img class="rounded mx-auto d-block" src="./img/bbqBurger.png" alt="">
 </div>
 
 <div class="col-xl bg-warning"></div>
@@ -60,4 +119,9 @@
 
 
 </body>
+<script src="./js/jquery-3.5.1.slim.min.js"></script>
+<script src="./js/popper.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/order.js"></script>
+<script src="./js/weather.js"></script>
 </html>
