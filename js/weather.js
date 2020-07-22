@@ -17,4 +17,48 @@ function weatherWidget() {
             break;
         }
     }
+
+    minTemperature();
+    maxTemperature();
+    avgTemperature();
+
 };
+
+function minTemperature() {
+    let minTemp = document.querySelector('#low');
+    let min = temperatures.length != 0 ? temperatures[0] : 0;
+    for (let i = 1; i < temperatures.length; i++) {
+        if (temperatures[i] < min) {
+            min = temperatures[i];
+            
+        }
+        
+    }
+    minTemp.innerHTML += ' <span class="text-warning text-center">' + min + '&deg;C</span>';
+    return min;
+};
+
+function maxTemperature() {
+    let maxTemp = document.querySelector('#high');
+    let max = temperatures.length != 0 ? temperatures[0] : 0;
+    for (let i = 1; i < temperatures.length; i++) {
+        if (temperatures[i] > max) {
+            max = temperatures[i];
+        }
+        
+    }
+    maxTemp.innerHTML += ' <span class="text-warning text-center">' + max + '&deg;C</span>';
+    return max;
+};
+
+function avgTemperature() {
+    let avrTemp = document.querySelector('#sum')
+    let avg = 0;
+    for (let i = 0; i < temperatures.length; i++) {
+        avg += (temperatures[i] / temperatures.length);
+        
+    }
+    avrTemp.innerHTML += ' <span class="text-warning text-center">' + avg.toFixed(1) + '&deg;C</span>';
+    return temperatures.length != 0 ? avg / temperatures.length : 0;
+};
+
