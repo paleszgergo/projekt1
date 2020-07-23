@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": 3,
+      "first": "Kiss",
+      "last": "Béla",
+      "email": "kb@lol.hu"
+    },
+    {
+      "id": 4,
+      "first": "Pálinkás",
+      "last": "Gergő",
+      "email": "palinkas.gergo@gmail.com"
+    },
+    {
+      "first": "ZSUZSA",
+      "last": "NAGY",
+      "email": "nesquik86@freemail.hu",
+      "id": 5
+    },
+    {
+      "id": 6,
+      "first": "Rostás",
+      "last": "Rozalio",
+      "email": "rr@gmail.com"
+    },
+    {
+      "first": "Fekete",
+      "last": "Jóska",
+      "email": "fj@gmail.com",
+      "id": 7
+    },
+    {
+      "first": "Oláh",
+      "last": "Cigány",
+      "email": "oc@o.hu",
+      "id": 8
+    },
+    {
+      "first": "Lol",
+      "last": "Lajos",
+      "email": "ll@gmail.com",
+      "id": 9
+    },
+    {
+      "first": "fgdhg",
+      "last": "fghgf",
+      "email": "ydfgfd@dfgfd.hu",
+      "id": 10
+    }
+  ]
+}
